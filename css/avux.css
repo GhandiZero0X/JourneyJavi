@@ -1,0 +1,91 @@
+.hiasan {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+#Hero .hiasan img {
+    right: 0;
+    top: 20%;
+    max-width: 250px;
+    z-index: 2;
+}
+
+#Testimoni .hiasan img {
+    position: absolute;
+    left: -10px;
+    top: -120px;
+    max-width: 250px;
+    z-index: -10;
+}
+
+.site-footer .hiasan img:nth-child(1) {
+    position: absolute;
+    left: -10px;
+    bottom: -120px;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.site-footer .hiasan img:nth-child(2) {
+    position: absolute;
+    right: -10px;
+    bottom: -120px;
+    max-width: 400px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    #Hero .hiasan img {
+        right: 0;
+        top: 20%;
+        max-width: 20%;
+    }
+
+    #Testimoni .hiasan img {
+        left: -80px;
+        top: -80px;
+        max-width: 50%;
+    }
+
+    .site-footer .hiasan {
+        overflow: hidden;
+    }
+
+    .site-footer .hiasan img:nth-child(1) {
+        left: -10px;
+        bottom: 0px;
+        max-width: 70%;
+    }
+
+    .site-footer .hiasan img:nth-child(2) {
+        right: -50%;
+        bottom: 0px;
+        max-width: 80%;
+    }
+}
+
+#Testimoni {
+    position: relative;
+    z-index: 2 !important;
+}
+
+@media (max-width: 767.98px) {
+    #Hero {
+        height: 80vh;
+    }
+
+    .img-bg.rellax {
+        width: 100vh;
+    }
+
+    .img-bg.rellax img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .gambar-hero.mx-auto img {
+        position: absolute;
+        z-index: 6;
+    }
+}
